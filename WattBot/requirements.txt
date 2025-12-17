@@ -14,9 +14,12 @@ pypdf
 torch==2.9.1
 # torchvision==0.24.1   # optional; add only if you need it
 # torchaudio==2.9.1     # optional; add only if you need it
+accelerate
 
+# llms
 transformers
 sentence-transformers
+bitsandbytes
 
 # utils
 psutil
