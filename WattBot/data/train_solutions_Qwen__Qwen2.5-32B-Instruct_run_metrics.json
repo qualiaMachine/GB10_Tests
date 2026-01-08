@@ -1,0 +1,29 @@
+{
+  "run_metadata": {
+    "model_id": "Qwen/Qwen2.5-32B-Instruct",
+    "quant": "4bit",
+    "dtype": "bf16",
+    "force_gpu": true,
+    "embedding_model_id": "thenlper/gte-large",
+    "embedding_batch_size": 128,
+    "top_k": 8,
+    "answer_max_new_tokens": 384,
+    "python": "3.10.19",
+    "platform": "Linux-6.11.0-1016-nvidia-aarch64-with-glibc2.39",
+    "torch": "2.9.1+cu130",
+    "torch_cuda": "13.0",
+    "cuda_capability": "(12, 1)",
+    "gpu_name": "NVIDIA GB10",
+    "transformers": "4.57.3",
+    "sentence_transformers": "5.2.0"
+  },
+  "timings": {
+    "timing_model_load_s": 304.89989577100005,
+    "timing_embedding_s": 79.86900565300039,
+    "timing_generation_s": 802.7422740579996,
+    "num_chunks": 2874,
+    "num_questions": 41,
+    "chunks_per_s": 35.98392112813332,
+    "questions_per_s": 0.051074923203854684
+  }
+}
