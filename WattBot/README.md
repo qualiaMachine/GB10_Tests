@@ -4,6 +4,12 @@ Test capabilities of Dell's GB10
 # Test #1: RAG Capabilities
 
 ## Setup
+Clone the repo
+
+```bash
+git clone https://github.com/qualiaMachine/GB10_Tests.git
+```
+
 Cd to RAG directory
 ```python
 cd GB10_Tests/WattBot
@@ -11,7 +17,7 @@ cd GB10_Tests/WattBot
 
 Install UV
 ```python
-curl -LsSf https://astral.sh/uv/install.sh | sh
+pip install uv
 ```
 
 Create venv
