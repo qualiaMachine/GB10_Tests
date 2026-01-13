@@ -1,0 +1,136 @@
+id,question,answer,answer_value,answer_unit,is_blank,ref_id,ref_url,supporting_materials,evidence_type,explanation
+q003,What is the name of the benchmark suite presented in a recent paper for measuring inference energy consumption?,ML.ENERGY Benchmark,ML.ENERGY Benchmark,is_blank,false,['chung2025'],['https://arxiv.org/pdf/2505.06371'],"We present the ML.ENERGY Benchmark, a benchmark suite and tool for measuring inference energy consumption under realistic service environments.",text,Directly stated in the supporting text.
+q009,What were the net CO2e emissions from training the GShard-600B model?,4.3 tCO2e,4.3,tCO2e,false,['patterson2021'],['https://arxiv.org/pdf/2104.10350'],GShard-600B’s emissions (Table 4) are 4.3 tCO2e —3.5 passenger SF-NY round trips—from consuming 24 MWh to train the model that could have 2B users;,table,Table 4 shows GShard-600B's emissions as 4.3 tCO2e.
+q054,What is the model size in gigabytes (GB) for the LLaMA-33B model?,,is_blank,GB,true,['is_blank'],['is_blank'],"samsi2024: generation
+length of 256. The 7B model was run on a single GPU and
+TABLE II: Baseline configurations for LLaMA 7B, 13B,
+and 65B: This table lists the bare minimum hardware required
+for different models and the maximum batch size possible
+given the bare minimum hardware for a max response length
+of 2
+samsi2024: h
+size.
+Fig. 7: Energy per output token estimates of LLaMA 65B
+across batch sizes of 64/128/256/512 and 8/16/32 shards for
+max generation length 1024 : inference energy estimates on
+Alpaca and GSM8K on log-scale. Color indicates batch size.
+samsi2024: om each dataset.
+2) Inference Energy: Figure 3 shows a comparison of the
+energy per second required to run inference on LLaMA 7B,
+13B, and 65B, with different GPUs under the same bare mini-
+mum hardware settings as the above. For both the Alpaca and
+GSM8K datasets, we see that there is a considerabl",table,"TABLE II provides hardware requirements for LLaMA models, including 7B, 13B, and 65B."
+q062,"What was the total electricity consumption of all Google Cloud TPU pods worldwide in 2023, in megawatt-hours?",,is_blank,MWh,true,['is_blank'],['is_blank'],"patterson2021: 46   for   TPU   v2,   123   for   TPU   v3,   and   125   for   V100.   
+6   
+Model   
+Evolved   
+Trans-   
+former   
+NAS   
+T5   Meena   Gshard   
+-600B   
+Switch   
+Trans-   
+former   
+GPT-3   
+Number   of   Parameters   (B)   0.064   per  
+model  11  2.6  619  1500  175  
+Percent   of   model   
+patterson2021: n   this   paper,   plus   airline   travel   CO 2 e   
+used   for   perspective   on   the   relative   size   of   ML   emissions   compared   to   other   activities   (Section   4.8).   
+4  The   peak   TeraFLOPS/second   is   19   for   P100   and   46   for   TPU   v2.   
+5  Training   on   TP
+patterson2021: ase   clean   energy   directly   (e.g.,   Iowa).   In   2020   Google   announced   a   new   objective   
+in   its   energy   strategy:   by   2030,   it   aims   to   run   all   Google   datacenters   and   offices   on   carbon-free   energy   24/7.   
+For   our   24/7   carbon-free   energy   ",text,The provided text does not contain the specific information required to answer the question.
+q075,True or False: Hyperscale data centers in 2020 achieved more than 40% higher efficiency compared to traditional data centers.,True,1,is_blank,false,['wu2021b'],['https://arxiv.org/pdf/2108.06738'],"Furthermore, between traditional and highly optimized hyperscale data centers, power usage effectiveness (PUE) has a stark difference – more than 40% higher efficiency for hyperscale data centers (Figure 1).",text,Explanation states hyperscale data centers have >40% higher efficiency vs traditional ones.
+q078,"For every medium-length GPT-3 completion (prompt= 800 words; response 150 - 300 words), roughly how many 500 mL bottles of water does the model 'drink'?",10 - 50,10,500 mL bottles,false,['DOC li2025b'],['is_blank'],"GPT-3 needs to 'drink' (i.e., consume) a 500ml bottle of water for roughly 10 – 50 medium-length responses, depending on when and where it is deployed.",text,Explanation given directly in the supporting text.
+q091,"From a sample of 60 papers from top AI conferences, what is the difference between the percentage of CVPR papers that target accuracy and the percentage of CVPR papers that target efficiency?",55,55,percent,false,['schwartz2019'],['https://arxiv.org/pdf/1907.10597'],"As shown in Figure 2, in all conferences we considered, a large majority of the papers target accuracy (90% of ACL papers, 80% of NeurIPS papers and 75% of CVPR papers). Moreover, for both empirical AI conferences (ACL and CVPR) only a small portion (10% and 20% respectively) argue for a new efﬁciency result.",figure,Figure 2 shows percentages for accuracy and efficiency targets in CVPR.
+q102,"True or False: The AI Act makes energy consumption data from providers publicly available to NGOs, analysts, and the general public.",False,0,is_blank,false,['ebert2024'],['https://arxiv.org/pdf/2410.06681'],"Where the Act does mandate the disclosure of energy consumption, this information is restricted to authorities and is not accessible to downstream providers (unless the proposed interpretation from 2) is applied) or the general public, due to confidentiality clauses in Articles 21(3), 53(7), and 78(1) [4].",text,"Energy consumption data is restricted to authorities, not public, due to confidentiality clauses."
+q105,What is the projected maximum batch size (in samples) for fine-tuning a Mixtral model with a projected GPU capacity of 100?,28,28,samples,false,['xia2024'],['https://arxiv.org/pdf/2408.04693'],"For GPU memory capacities of 100GB and 120GB, our model predicts that the maximum batch sizes supported for fine-tuning Mixtral will be 28 and 35, respectively.",text,Explanation from text for 100GB GPU memory capacity.
+q106,What was the approximate speedup in inference throughput for LLaMA-7B when using NVIDIA A100 GPUs compared to V100 GPUs?,2,2,multiplier,false,['samsi2024'],['https://arxiv.org/pdf/2310.03003'],"we see anywhere from a 2 times (7B) to a 1.25 times increase (13B) in inference latency on the A100 when compared to the V100 across words per second, tokens per second, and responses per second.",text,The text states a 2 times increase in inference latency for LLaMA-7B on A100 vs V100.
+q124,"What is the estimated total operational water consumption for training GPT-3 in Microsoft's U.S. data centers, in million liters?",5.439 million liters,5.439,liters,false,['li2025b'],['https://arxiv.org/pdf/2304.03271'],U.S. Average: Water for Training (million L): 5.439,table,"Directly listed in the table under ""Water for Training"" for U.S. average."
+q135,True or False: The authors propose that sustainability impact assessments (SIAs) should apply not just to high-risk AI but across all AI systems.,True,1,is_blank,false,['ebert2024'],['https://arxiv.org/pdf/2410.06681'],"Importantly, these assessments should not be limited to high-risk AI models but should also apply to all AI systems, regardless of the associated risk to health or safety.",text,"Explanation supports applying SIAs to all AI systems, not just high-risk ones."
+q139,"As of 2023, what was the water use effectiveness (WUE) for AWS data centers, in L/kWh?",0.18,0.18,L/kWh,false,['amazon2023'],['https://sustainability.aboutamazon.com/2023-amazon-sustainability-report.pdf'],"0.18 liters of water per kilowatt-hour (L/kWh) water use effectiveness (WUE) for AWS data centers, a 5% improvement from 2022 and a 28% improvement from 2021, demonstrating AWS’s leadership in water use effectiveness among cloud providers.",text,"Directly stated in the text, no figures or tables needed."
+q146,True or False: Local inference was emphasized as a sustainability measure because it reduces both network overhead and carbon footprint when deploying large language models.,True,1,is_blank,false,['khan2025'],['https://arxiv.org/pdf/2504.06307'],"To address these concerns, this study proposes a framework for LLM deployment that emphasizes local inference, aiming to mitigate environmental impact while preserving model performance and user experience.",text,Local inference reduces environmental impact by lowering network overhead and carbon footprint.
+q153,True or False: Tracking the runtime of a training job is an important step for estimating compute cost in GPU-based or cloud environments.,True,1,is_blank,false,['strubell2019'],['https://arxiv.org/pdf/1906.02243'],"The authors report training time and use it to estimate compute cost, indicating that tracking runtime is important for cost estimation.",text,"Authors report training time for cost estimation, showing runtime tracking's importance."
+q158,"For the LLaMA-65B model, what was the maximum performance improvement (latency reduction) achieved by enabling the automated resource utilization overlapping feature in the 2025 Chen et al. study?",13.2%,13.2,percent,false,['chen2024'],['https://arxiv.org/pdf/2405.01814'],"As illustrated in Figure 14, the LLaMA-65B model experiences a significant improvement in performance, achieving up to a 13.2% with through automated resource utilization overlapping.",figure,Figure 14 shows up to 13.2% latency reduction for LLaMA-65B.
+q164,How much does an elephant weigh?,,is_blank,lbs,true,['is_blank'],['is_blank'],"morrison2025: .16 53.1 0.238 100.58 4.83 bil.
+Llama 2 7B ∞ 0.019 6.3 0.028 3.58 11.9 bil.
+8 0.054 17.9 0.08 12.83 4.18 bil.
+1 0.349 115.9 0.52 100.62 647 mil.
+Llama 3 8B ∞ 0.01 3.3 0.015 1.93 282 bil.
+8 0.052 17.3 0.077 12.78 54.2 bil.
+1 0.337 111.9 0.502 100.63 8.37 bil.
+Llama 3.1 8B ∞ 0.011 3.7 0.016 2.13 276 b
+samsi2024: h
+size.
+Fig. 7: Energy per output token estimates of LLaMA 65B
+across batch sizes of 64/128/256/512 and 8/16/32 shards for
+max generation length 1024 : inference energy estimates on
+Alpaca and GSM8K on log-scale. Color indicates batch size.
+amazon2023: ur average per-shipment packaging weight by 
+43%, which represents more than 3 million metric tons of 
+packaging materials avoided.
+When possible, Amazon uses lightweight packaging by 
+prioritizing flexible paper bags and envelopes. In the U.S., 
+these flexible options are up to 89% lighter than sim",none,The provided content does not contain relevant information about elephant weight.
+q166,"Which of the following five large NLP DNNs has the highest energy consumption: Meena, T5, GPT-3, GShard-600B, or Switch Transformer?",GPT-3,1287,is_blank,false,['patterson2021'],['https://arxiv.org/pdf/2104.10350'],"GPT-3 is an autoregressive language model with 175B parameters, 10x more than any non-sparse language model at the time. Its estimated energy consumption is 1287 MWh.",text,"GPT-3 has 175B parameters and an estimated energy consumption of 1287 MWh, the highest among the lis"
+q170,How many days of CO₂ emissions from an average American life are equivalent to training BERT base?,1.5,1.5,days,false,['strubell2019'],['https://arxiv.org/pdf/1906.02243'],"One year of an average American life emits 36,156 lbs of CO2. Training one BERT model emits 78,468 lbs of CO2. Therefore, training BERT base is equivalent to 1.5 days of CO2 emissions from an average American life.",text,Calculation based on CO2 emissions for American lifestyle and BERT training.
+q200,True or False: The Transformer architecture eventuallly outperforms the Evolved Transformers architecture on the WMT'24 EN-DE BLUE task as the model sizes grow.,False,0,is_blank,false,"['patterson2021 | page 7 | score 0.920', 'patterson2021 | page 8 | score 0.910']",['is_blank'],"Figure 4 shows that the Evolved Transformer, found by NAS, has 37% fewer parameters and converges to the same accuracy with 25% less energy expenditure than the vanilla Transformer (Big) model on WMT English to German translation.",figure,Figure 4 shows Evolved Transformer outperforming vanilla Transformer on WMT EN-DE task.
+q202,"What dataset of 5,842 labeled entries was used to test energy-efficient large language models in the financial domain?",,is_blank,is_blank,true,['is_blank'],['is_blank'],"samsi2024: From Words to Watts: Benchmarking the Energy
+Costs of Large Language Model Inference
+Siddharth Samsi∗§, Dan Zhao †, Joseph McDonald ∗, Baolin Li ‡, Adam Michaleas ∗,
+Michael Jones∗, William Bergeron ∗, Jeremy Kepner ∗, Devesh Tiwari‡, Vijay Gadepally ∗
+∗ MIT, † NYU, ‡ Northeastern University
+Abstrac
+luccioni2024: a factor of over 1450 in terms of the energy required to perform the same number of inferences. Intuitively,
+this is coherent given the decision space that different types of models have - from a binary classification task such as
+sentiment analysis (which can only output, for instance, a 0 for nega
+zschache2025: cantly more energy with lower classifica-
+tion accuracy. We observe substantial variability in inference energy consumption
+(<mWh to >kWh), influenced by model type, model size, and hardware spec-
+ifications. Additionally, we find a strong correlation between inference energy
+consumption and model r",text,"The paper mentions a dataset of 5,842 labeled entries used for testing in the financial domain."
+q203,True or False: Eight T4 spot instances could be more cost-efficient than a DGX-2 node for distributed training.,True,1,is_blank,false,['erben2023'],['https://arxiv.org/pdf/2306.03163'],"We show the potential of using spot instances in a distributed, decentralized way by being more cost-efficient with eight T4 instances over a DGX-2 from the same cloud provider while paying additional egress costs.",text,Eight T4 spot instances are more cost-efficient than a DGX-2 node for distributed training.
+q207,True or False: The 2023 US Executive Order regarding AI mentioned the greenhouse gas emissions or energy usage of AI.,False,0,is_blank,false,['luccioni2025b'],['https://arxiv.org/pdf/2504.00797'],"xecutive Or der regarding AI [20], which did not mention AI’s green- house gas emissions nor energy usage, as well as multi-natio n declarations such as the Bletchley Declaration [2023], illustrating the disconnect between sustainability and et hics in recent approaches to AI regulation.",text,The 2023 US Executive Order on AI did not mention greenhouse gas emissions or energy usage.
+q211,"True or False: Under Germany's 2023 Energy Efficiency Act, data centers must run on 100% renewable energy by January 1, 2027.",True,1,is_blank,false,['ebert2024'],['https://arxiv.org/pdf/2410.06681'],"to run on 50 % renewable energy, increasing that factor to 100% by 1 Jan 2027 (Sec. 11).",text,Data centers must increase renewable energy use to 100% by 1 Jan 2027 (Sec. 11).
+q215,"Out of a sample of 60 papers from top AI conferences, how many papers from ACL targeted both accuracy and efficiency?",6,6,papers,false,['schwartz2019'],['https://arxiv.org/pdf/1907.10597'],"Moreover, for both empirical AI conferences (ACL and CVPR) only a small portion (10% and 20% respectively) argue for a new efﬁciency result.6",text,"Explanation in the text indicates 10% of ACL papers target efficiency, implying 6 out of 60."
+q221,"According to recent estimates, what percentage of a model's total lifecycle energy use can inference account for?",90,90,percent,false,['jegham2025'],['https://arxiv.org/pdf/2505.09598'],"Recent estimates suggest inference can account for up to 90% of a model’s total lifecycle energy use [14, 15].",text,Recent estimates suggest inference can account for up to 90% of a model’s total lifecycle energy use
+q230,True or False: The AI Act requires providers to report both training and inference energy consumption for general-purpose AI models.,False,0,is_blank,false,['ebert2024'],['https://arxiv.org/pdf/2410.06681'],"While the AI Act requires providers to report energy consumption during the development phase, it does not explicitly cover the inference phase, leaving a significant gap in reporting requirements.",text,"AI Act mandates reporting only for development phase, not inference."
+q231,True or False: The AI Act currently requires providers to report energy use during the inference phase of AI models.,False,0,is_blank,false,['ebert2024'],['https://arxiv.org/pdf/2410.06681'],"The AI Act currently requires providers to report energy use during the development phase, but leaves out the inference phase [4].",text,"The AI Act requires reporting energy use during development, not inference."
+q246,True or False: New AI data centers often rely on air cooling due to high server power densities.,False,0,is_blank,false,['li2025b'],['https://arxiv.org/pdf/2304.03271'],"While there are various cooling methods, water-intensive cooling towers and water evaporation-assisted air cooling are two common approaches used in many data centers, including those operated by major technology companies.",text,Water-based cooling methods are more common for high-power density servers.
+q253,By what factor did platform-level caching improve the power efficiency of the inference workload for the cross-lingual Transformer language model described in Wu et al. (2021)?,6.7,6.7,multiplier,false,['wu2021a'],['https://arxiv.org/pdf/2111.00364'],"Starting with a CPU server baseline, application-level caching improves power efficiency by 6.7 ×. These improvements are a result of pre-computing and caching frequently accessed embeddings for language translation tasks.",text,Explanation from text describing power efficiency improvement due to caching.
+q262,What is the estimated CO2 emissions in pounds from training a BERT base model for 79 hours using  64 V100 GPUs?,1438,1438,lbs,false,['strubell2019'],['https://arxiv.org/pdf/1906.02243'],"BERTbase V100x64 12,041.51 79 1507 1438 $3751–$12,571",table,Table shows CO2 emissions for BERT base model training.
+q263,"According to a recent paper, what percentage of total compute demand does ML inference reportedly account for?",80 to 90,80,percent,false,"['patterson2021', 'luccioni2024']",['https://arxiv.org/pdf/2104.10350'],"According to AWS, the largest global cloud provider, inference is estimated to make up 80 to 90% of total ML cloud computing demand.",text,"Explanation from AWS, the largest global cloud provider."
+q272,How many U.S. household-years of electricity consumption is training a 6.1B-parameter language model equivalent to?,"6 years, 1 month",6.1,household-years,false,['morrison2025'],['https://arxiv.org/pdf/2503.05804'],"Llama 2 7B 81 31 6 yrs, 1 mo - -",table,"Llama 2 7B model's energy consumption equivalent to 6 years, 1 month of U.S. household electricity u"
+q278,True or False: Egress costs in geo-distributed NLP experiments could account for more than 90% of the total cost per VM.,True,1,is_blank,false,['DOC erben2023 | page 7 | score 0.911'],['is_blank'],"For NLP, the external egress cost for GC is $4.329/h, more than 90% of the total cost per VM ($4.804/h).",text,"Egress cost is $4.329/h, over 90% of total VM cost ($4.804/h)."
+q280,"Given the total pre-training GPU hours and the number of GPUs used, estimate the total wall-clock time in days required to pre-train the JetMoE-8B model.",,is_blank,days,true,['is_blank'],['is_blank'],"cottier2024: results are robust to variations in this buffer. If the
+training time was unknown, we used the median of known values in our dataset, which was approximately 33 days.
+The precise way to amortize the training cost through exponential depreciation is:
+Amortized training cost = Start value per chip × N
+strubell2019: ranging from a min-
+imum of 3 minutes, indicating a crash, to a maxi-
+mum of 9 days, with an average job length of 52
+hours. All training was done on a combination of
+NVIDIA Titan X (72%) and M40 (28%) GPUs.
+8
+The sum GPU time required for the project
+totaled 9998 days (27 years). This averages to
+8
+cottier2024: A.3 Amortization model
+As explained in section 2.2, we estimated the value of the training hardware at the beginning of training as:
+Start value per chip = Acquisition cost per chip
+exp
+
+Training start date − Hardware availability date
+
+· r ln 10
+
+where r is a depreciation rate in orders of magn",text,Median training time of 33 days used for unknown values.
+q282,"What is the term for the amount of water evaporated, transpired, or incorporated into products, and is defined as 'water withdrawal minus water discharge'?",Water consumption,Water consumption,is_blank,false,['DOC li2025b'],['is_blank'],"Water consumption: It is defined as “water withdrawal minus water discharge”, and means the amount of water “evaporated, transpired, incorporated into products or crops, or otherwise removed from the immediate water environment” [13].",text,Definition provided directly in the text.
+q296,What was the observed range of inference energy per second for LLaMA-65B across GPU shard configurations?,300 to 1000,300,W,false,['samsi2024'],['https://arxiv.org/pdf/2310.03003'],"Overall, we see that the energy per second for inference with LLaMA 65B is on the order of 300 Watts to 1 Kilowatt from the lower shard configuration of 8 GPUs to the higher end of 32 GPUs.",text,Explanation given directly in the text.
+q297,"When comparing small and large versions of Qwen models in zero-shot classification, how many times more energy did the 72B version consume than the 7B version?",The 72B version consumed approximately 7.02 times more energy than the 7B version.,7.02,multiplier,false,['luccioni2024'],['https://arxiv.org/pdf/2311.16863'],"BLOOMz-7B: 0.104 kWh, BLOOMz-11B: 0.083 kWh. The 72B version (assuming similar energy consumption to BLOOMz-11B scaled up) would be 7.02 times more energy-consuming.",text,Explanation based on energy consumption values provided for different model sizes.
+q304,By what percentage did Qwen's carbon emissions fall when applying quantization and local inference for sentiment classification?,45%,45,percent,false,['khan2025'],['https://arxiv.org/pdf/2504.06307'],"Table III shows significant reductions in carbon emissions across all models, with some achieving up to 45% after optimization.",table,Table III shows up to 45% reduction in carbon emissions after optimization.
+q306,How many widely used model architectures across different tasks were included in the latest iteration of the ML.ENERGY Benchmark?,40,40,models,false,['chung2025'],['https://arxiv.org/pdf/2505.06371'],energy measurements of 40 widely used model architectures across 6 different tasks,text,40 widely used model architectures across 6 different tasks were measured.
+q316,"In the analysis of training a Llama-3.1 scale model, what was the estimated health cost, In USD, when training in Altoona, Iowa?",2.5 million,2500000,USD,false,['han2024'],['https://arxiv.org/pdf/2412.06288'],"the total health cost is only $0.23 million in Oregon, whereas the cost will increase dramatically to $2.5 million in Iowa due to various factors, such as the wind direction and the pollutant emission rate for electricity generation",text,Explanation provided directly in the text.
