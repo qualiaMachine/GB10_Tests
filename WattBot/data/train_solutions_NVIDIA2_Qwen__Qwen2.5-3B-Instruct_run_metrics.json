@@ -1,6 +1,6 @@
 {
   "run_metadata": {
-    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "model_id": "Qwen/Qwen2.5-3B-Instruct",
     "quant": "4bit",
     "dtype": "bf16",
     "force_gpu": true,
@@ -18,12 +18,12 @@
     "sentence_transformers": "5.2.0"
   },
   "timings": {
-    "timing_model_load_s": 12.151948955375701,
-    "timing_embedding_s": 9.237844326999038,
-    "timing_generation_s": 93.33531495695934,
+    "timing_model_load_s": 5.0443294807337224,
+    "timing_embedding_s": 9.084439218975604,
+    "timing_generation_s": 102.601341328118,
     "num_chunks": 2874,
     "num_questions": 41,
-    "chunks_per_s": 311.11154272217897,
-    "questions_per_s": 0.43927638770926897
+    "chunks_per_s": 316.3651526223853,
+    "questions_per_s": 0.3996049122679833
   }
 }

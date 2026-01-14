@@ -18,12 +18,12 @@
     "sentence_transformers": "5.2.0"
   },
   "timings": {
-    "timing_model_load_s": 12.151948955375701,
-    "timing_embedding_s": 9.237844326999038,
-    "timing_generation_s": 93.33531495695934,
+    "timing_model_load_s": 10.597319995053113,
+    "timing_embedding_s": 9.145109239034355,
+    "timing_generation_s": 96.8712905952707,
     "num_chunks": 2874,
     "num_questions": 41,
-    "chunks_per_s": 311.11154272217897,
-    "questions_per_s": 0.43927638770926897
+    "chunks_per_s": 314.2663389664955,
+    "questions_per_s": 0.42324201265469297
   }
 }
