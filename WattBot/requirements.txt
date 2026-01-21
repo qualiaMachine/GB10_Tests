@@ -16,9 +16,6 @@ torch==2.9.1
 # torchaudio==2.9.1     # optional; add only if you need it
 accelerate
 
-# use sharding across GPUs with vLLM
-vllm
-
 # llms
 transformers
 sentence-transformers
