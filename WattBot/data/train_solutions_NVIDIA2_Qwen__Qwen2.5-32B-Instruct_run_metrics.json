@@ -1,0 +1,30 @@
+{
+  "run_metadata": {
+    "model_id": "Qwen/Qwen2.5-32B-Instruct",
+    "quant": "4bit",
+    "dtype": "bf16",
+    "device_map": "auto",
+    "force_gpu": false,
+    "embedding_model_id": "thenlper/gte-large",
+    "embedding_batch_size": 128,
+    "top_k": 8,
+    "answer_max_new_tokens": 384,
+    "python": "3.12.3",
+    "platform": "Linux-5.15.0-164-generic-x86_64-with-glibc2.39",
+    "torch": "2.9.1+cu130",
+    "torch_cuda": "13.0",
+    "cuda_capability": "(12, 0)",
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "transformers": "4.57.6",
+    "sentence_transformers": "5.2.0"
+  },
+  "timings": {
+    "timing_model_load_s": 8.041846015956253,
+    "timing_embedding_s": 9.285641037393361,
+    "timing_generation_s": 269.8421681923792,
+    "num_chunks": 2874,
+    "num_questions": 41,
+    "chunks_per_s": 309.51013381051195,
+    "questions_per_s": 0.15194067063221112
+  }
+}
