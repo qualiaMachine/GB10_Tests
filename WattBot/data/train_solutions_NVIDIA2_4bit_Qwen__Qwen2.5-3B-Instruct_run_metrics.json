@@ -1,0 +1,63 @@
+{
+  "run_metadata": {
+    "model_id": "Qwen/Qwen2.5-3B-Instruct",
+    "quant": "4bit",
+    "dtype": "bf16",
+    "device_map": "balanced",
+    "force_gpu": false,
+    "gpu_mem_after_load": {
+      "0": {
+        "allocated_gb": 3.445023232,
+        "reserved_gb": 9.309257728
+      },
+      "1": {
+        "allocated_gb": 0.0,
+        "reserved_gb": 0.002097152
+      }
+    },
+    "canonical_n_params": 3090000000,
+    "disk_bytes_est": 6180000000,
+    "gpu_energy_wh": {
+      "0": 5.247758926230999,
+      "1": 2.670766253765423
+    },
+    "gpu_energy_method": "power_sampling",
+    "embedding_model_id": "thenlper/gte-large",
+    "embedding_batch_size": 128,
+    "top_k": 8,
+    "answer_max_new_tokens": 384,
+    "python": "3.12.3",
+    "platform": "Linux-5.15.0-164-generic-x86_64-with-glibc2.39",
+    "torch": "2.9.1+cu130",
+    "torch_cuda": "13.0",
+    "cuda_capability": "(12, 0)",
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "transformers": "4.57.6",
+    "sentence_transformers": "5.2.0"
+  },
+  "timings": {
+    "timing_model_load_s": 3.773945231921971,
+    "timing_embedding_s": 9.114915465004742,
+    "timing_generation_s": 113.1740084150806,
+    "num_chunks": 2874,
+    "num_questions": 41,
+    "chunks_per_s": 315.30736747194885,
+    "questions_per_s": 0.3622739935977799,
+    "cpu_rss_peak_bytes": 2691858432,
+    "cpu_rss_peak_human": "2.51 GB",
+    "gpu_peak_mem": {
+      "0": {
+        "max_allocated_gb": 4.076307456,
+        "max_reserved_gb": 9.326034944
+      },
+      "1": {
+        "max_allocated_gb": 0.0,
+        "max_reserved_gb": 0.002097152
+      }
+    },
+    "gpu_energy_wh": {
+      "0": 5.247758926230999,
+      "1": 2.670766253765423
+    }
+  }
+}
