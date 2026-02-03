@@ -9,7 +9,7 @@ An **AnyDesk remote desktop option** is documented as a fallback.
 ## Prerequisites
 
 - Account on the GB10 host  
-- Network access (VPN if required)  
+- UW Network access (use GlobalProtect VPN from UW-Madison if working off-campus)
 - Local SSH client  
 - Assigned GPU access (typically single-user per box)
 
@@ -21,7 +21,13 @@ An **AnyDesk remote desktop option** is documented as a fallback.
 
 ```bash
 # ssh <username>@<gb10-hostname>
-ssh mlx@10.141.72.249
+ssh mlx@128.104.18.206 # ethernet address
+```
+
+If the above fails or times out, try connecting to the Wi-Fi address instead.
+
+```bash
+ssh mlx@10.141.72.249 # wifi
 ```
 
 Notes:
