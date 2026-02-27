@@ -21,14 +21,9 @@ An **AnyDesk remote desktop option** is documented as a fallback.
 
 ```bash
 # ssh <username>@<gb10-hostname>
-ssh mlx@128.104.18.206 # ethernet address
+ssh username@ip-address 
 ```
 
-If the above fails or times out, try connecting to the Wi-Fi address instead.
-
-```bash
-ssh mlx@10.141.72.249 # wifi
-```
 
 Notes:
 - If prompted with "The authenticity of host ...", type "yes" to continue
